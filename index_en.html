@@ -1,0 +1,1174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EN</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-white text-gray-900">
+    <!-- Announcement Bar -->
+    <div
+      class="bg-gray-950 px-4 py-2.5 text-center text-xs font-medium tracking-wide text-white"
+    >
+      Free shipping on orders over $100
+      <a href="#" class="ml-1 underline underline-offset-4 hover:text-gray-300">
+        Shop now
+      </a>
+    </div>
+
+    <!-- Header -->
+    <header class="relative border-b border-gray-100 bg-white">
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 lg:px-8"
+      >
+        <!-- Logo -->
+        <a href="./index_en.html" class="text-2xl font-black tracking-[0.2em]">
+          NOVA
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden items-center gap-8 md:flex">
+          <a href="#" class="text-sm font-medium hover:text-gray-500"> Home </a>
+
+          <a href="#" class="text-sm font-medium hover:text-gray-500"> Shop </a>
+
+          <a href="#" class="text-sm font-medium hover:text-gray-500">
+            Collections
+          </a>
+
+          <a href="#" class="text-sm font-medium hover:text-gray-500">
+            About
+          </a>
+
+          <a href="#" class="text-sm font-medium hover:text-gray-500">
+            Contact
+          </a>
+        </div>
+
+        <!-- Header Actions -->
+        <div class="flex items-center gap-4">
+          <!-- Search -->
+          <button
+            type="button"
+            aria-label="Search"
+            class="hidden sm:block hover:text-gray-500"
+          >
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="11" cy="11" r="7" stroke-width="1.7" />
+              <path d="m16 16 4 4" stroke-width="1.7" stroke-linecap="round" />
+            </svg>
+          </button>
+
+          <!-- Wishlist -->
+          <button
+            type="button"
+            aria-label="Wishlist"
+            class="hidden sm:block hover:text-gray-500"
+          >
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M20.8 8.7c0 4.2-8.8 10-8.8 10s-8.8-5.8-8.8-10a4.5 4.5 0 0 1 8.8-1.5 4.5 4.5 0 0 1 8.8 1.5Z"
+                stroke-width="1.7"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <!-- Cart -->
+          <a
+            href="#"
+            aria-label="Shopping cart"
+            class="relative hover:text-gray-500"
+          >
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M3 3h2l2.2 11.2a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.6L21 7H6"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <circle cx="10" cy="20" r="1" fill="currentColor" />
+              <circle cx="18" cy="20" r="1" fill="currentColor" />
+            </svg>
+
+            <span
+              data-cart-count
+              class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-gray-950 text-[10px] text-white"
+            >
+              0
+            </span>
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-button"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            class="rounded-md p-1 hover:bg-gray-100 md:hidden"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M4 6h16M4 12h16M4 18h16"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="relative" id="language-selector">
+          <button
+            id="language-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="language-menu"
+            class="flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm font-medium text-gray-900 transition hover:bg-gray-100"
+          >
+            <!-- Globe Icon -->
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="10" stroke-width="1.7" />
+              <path
+                d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"
+                stroke-width="1.5"
+              />
+            </svg>
+
+            <span id="current-language">FA</span>
+
+            <svg
+              class="h-4 w-4 transition-transform"
+              id="language-arrow"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="m6 9 6 6 6-6"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <!-- Dropdown Menu -->
+          <div
+            id="language-menu"
+            class="absolute right-0 top-full z-50 mt-3 hidden w-52 overflow-hidden rounded-xl border border-gray-100 bg-white p-2 shadow-xl"
+          >
+            <a
+              href="./index_en.html"
+              class="flex items-center justify-between rounded-lg px-4 py-3 text-sm text-gray-700 transition hover:bg-gray-100"
+            >
+              <span class="flex items-center gap-3">
+                <span>🇺🇸</span>
+                English
+              </span>
+              <span id="english-check" class="hidden">✓</span>
+            </a>
+
+            <a
+              href="./index_fa.html"
+              class="flex items-center justify-between rounded-lg px-4 py-3 text-sm text-gray-700 transition hover:bg-gray-100"
+            >
+              <span class="flex items-center gap-3">
+                <span>🇮🇷</span>
+                فارسی
+              </span>
+              <span id="persian-check" class="hidden">✓</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden border-t border-gray-100 bg-white px-4 py-4 md:hidden"
+      >
+        <div class="flex flex-col gap-4">
+          <a href="#" class="text-sm font-medium">Home</a>
+          <a href="#" class="text-sm font-medium">Shop</a>
+          <a href="#" class="text-sm font-medium">Collections</a>
+          <a href="#" class="text-sm font-medium">About</a>
+          <a href="#" class="text-sm font-medium">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="mx-auto max-w-7xl px-4 py-10 sm:py-14 lg:px-8 lg:py-20">
+        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <!-- Hero Content -->
+          <div class="order-2 max-w-xl lg:order-1">
+            <span
+              class="mb-6 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gray-500"
+            >
+              New Collection 2026
+            </span>
+
+            <h1
+              class="text-4xl font-semibold leading-tight tracking-tight text-gray-950 sm:text-5xl lg:text-6xl"
+            >
+              Discover Your
+              <span class="block">Own Style.</span>
+            </h1>
+
+            <p
+              class="mt-6 max-w-md text-sm leading-7 text-gray-600 sm:text-base"
+            >
+              Explore timeless fashion pieces designed to bring confidence,
+              comfort and elegance to your everyday style.
+            </p>
+
+            <div class="mt-8 flex flex-wrap items-center gap-4">
+              <a
+                href="#featured-products"
+                class="inline-flex items-center justify-center bg-gray-950 px-8 py-4 text-sm font-medium text-white transition hover:bg-gray-700"
+              >
+                Shop Collection
+              </a>
+
+              <a
+                href="#categories"
+                class="text-sm font-medium text-gray-900 underline underline-offset-4 hover:text-gray-500"
+              >
+                Explore Categories
+              </a>
+            </div>
+
+            <div
+              class="mt-12 flex items-center gap-8 border-t border-gray-200 pt-6"
+            >
+              <div>
+                <p class="text-2xl font-semibold">500+</p>
+                <p class="mt-1 text-xs text-gray-500">Products</p>
+              </div>
+
+              <div>
+                <p class="text-2xl font-semibold">24/7</p>
+                <p class="mt-1 text-xs text-gray-500">Support</p>
+              </div>
+
+              <div>
+                <p class="text-2xl font-semibold">100%</p>
+                <p class="mt-1 text-xs text-gray-500">Quality</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Image -->
+          <div class="order-1 lg:order-2">
+            <div class="relative overflow-hidden rounded-2xl">
+              <img
+                src="./assets/Minimalist Beige Editorial Portrait.png"
+                alt="NOVA new season fashion collection"
+                width="1100"
+                height="1400"
+                fetchpriority="high"
+                class="h-[420px] w-full rounded-2xl object-cover object-center sm:h-[520px] lg:h-[580px]"
+              />
+
+              <div
+                class="absolute bottom-5 left-5 bg-white px-5 py-4 sm:bottom-8 sm:left-8"
+              >
+                <p class="text-xs uppercase tracking-widest text-gray-500">
+                  Season 2026
+                </p>
+
+                <p class="mt-1 text-sm font-semibold text-gray-950">
+                  Everyday Essentials
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Categories -->
+      <section id="categories" class="bg-white py-16 md:py-24">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+          <!-- Section Heading -->
+          <div class="mb-10 flex flex-col items-center text-center md:mb-14">
+            <span
+              class="mb-3 text-xs font-semibold uppercase tracking-[0.3em] text-stone-500"
+            >
+              Explore NOVA
+            </span>
+
+            <h2
+              class="text-3xl font-medium tracking-tight text-stone-900 sm:text-4xl md:text-5xl"
+            >
+              Shop by Category
+            </h2>
+
+            <p
+              class="mt-4 max-w-md text-sm leading-7 text-stone-500 md:text-base"
+            >
+              Discover timeless pieces designed to elevate your everyday style.
+            </p>
+          </div>
+
+          <!-- Category Cards -->
+          <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Clothing -->
+            <a
+              href="#featured-products"
+              class="group relative block overflow-hidden rounded-2xl bg-stone-100"
+            >
+              <div class="aspect-[4/5] overflow-hidden">
+                <img
+                  src="./assets/category-clothing.png"
+                  alt="Women's fashion and clothing collection"
+                  width="492"
+                  height="710"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+              ></div>
+
+              <div class="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8">
+                <p
+                  class="mb-2 text-xs uppercase tracking-[0.25em] text-white/80"
+                >
+                  Timeless Styles
+                </p>
+
+                <h3 class="text-3xl font-medium tracking-tight sm:text-4xl">
+                  Clothing
+                </h3>
+
+                <span
+                  class="mt-5 inline-flex items-center gap-3 border-b border-white pb-2 text-sm transition-all duration-300 group-hover:gap-5"
+                >
+                  Shop Now
+                  <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+
+            <!-- Shoes -->
+            <a
+              href="#featured-products"
+              class="group relative block overflow-hidden rounded-2xl bg-stone-100"
+            >
+              <div class="aspect-[4/5] overflow-hidden">
+                <img
+                  src="./assets/category-shoes.png"
+                  alt="Minimal ivory sneakers collection"
+                  width="491"
+                  height="710"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+              ></div>
+
+              <div class="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8">
+                <p
+                  class="mb-2 text-xs uppercase tracking-[0.25em] text-white/80"
+                >
+                  Step in Style
+                </p>
+
+                <h3 class="text-3xl font-medium tracking-tight sm:text-4xl">
+                  Shoes
+                </h3>
+
+                <span
+                  class="mt-5 inline-flex items-center gap-3 border-b border-white pb-2 text-sm transition-all duration-300 group-hover:gap-5"
+                >
+                  Shop Now
+                  <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+
+            <!-- Accessories -->
+            <a
+              href="#featured-products"
+              class="group relative block overflow-hidden rounded-2xl bg-stone-100 sm:col-span-2 lg:col-span-1"
+            >
+              <div class="aspect-[4/5] overflow-hidden rounded-">
+                <img
+                  src="./assets/category-accessories.png"
+                  alt="Black leather handbags and fashion accessories"
+                  width="493"
+                  height="710"
+                  loading="lazy"
+                  class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+              </div>
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"
+              ></div>
+
+              <div class="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8">
+                <p
+                  class="mb-2 text-xs uppercase tracking-[0.25em] text-white/80"
+                >
+                  The Perfect Finish
+                </p>
+
+                <h3 class="text-3xl font-medium tracking-tight sm:text-4xl">
+                  Accessories
+                </h3>
+
+                <span
+                  class="mt-5 inline-flex items-center gap-3 border-b border-white pb-2 text-sm transition-all duration-300 group-hover:gap-5"
+                >
+                  Shop Now
+                  <span aria-hidden="true">→</span>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section id="featured-products" class="bg-stone-50 py-16 md:py-24">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+          <!-- Section Heading -->
+          <div class="mb-10 text-center md:mb-14">
+            <span
+              class="mb-3 block text-xs font-semibold uppercase tracking-[0.3em] text-stone-500"
+            >
+              NOVA Selection
+            </span>
+
+            <h2
+              class="text-3xl font-medium tracking-tight text-stone-900 sm:text-4xl md:text-5xl"
+            >
+              Featured Products
+            </h2>
+
+            <p
+              class="mx-auto mt-4 max-w-lg text-sm leading-7 text-stone-500 md:text-base"
+            >
+              Discover our most loved pieces, carefully selected for your
+              everyday style.
+            </p>
+          </div>
+
+          <!-- Products Grid -->
+          <div
+            class="grid grid-cols-2 gap-x-4 gap-y-8 sm:gap-x-6 lg:grid-cols-4"
+          >
+            <!-- Product 1 -->
+            <article class="group min-w-0">
+              <div class="relative overflow-hidden rounded-lg bg-stone-100">
+                <a
+                  href="#product-blazer"
+                  class="block aspect-[4/5] overflow-hidden"
+                >
+                  <img
+                    src="./assets/product-tailored-blazer.png"
+                    alt="Beige tailored blazer"
+                    width="351"
+                    height="507"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </a>
+
+                <span
+                  data-cart-count
+                  class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-gray-950 text-[10px] text-white"
+                >
+                  0
+                </span>
+
+                <button
+                  type="button"
+                  data-wishlist-toggle
+                  aria-label="Add Tailored Blazer to wishlist"
+                  aria-pressed="false"
+                  class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-xl text-stone-900 transition hover:bg-stone-900 hover:text-white"
+                >
+                  ♡
+                </button>
+              </div>
+
+              <div class="pt-4">
+                <h3
+                  class="truncate text-sm font-medium text-stone-900 sm:text-base"
+                >
+                  <a href="#product-blazer" class="hover:text-stone-500">
+                    Tailored Blazer
+                  </a>
+                </h3>
+
+                <div class="mt-2 flex flex-wrap items-center gap-2">
+                  <span
+                    class="text-sm font-semibold text-stone-900 sm:text-base"
+                    >$79.99</span
+                  >
+                  <span class="text-xs text-stone-400 line-through sm:text-sm"
+                    >$99.99</span
+                  >
+                </div>
+
+                <div class="mt-2 flex items-center gap-1 text-xs">
+                  <span class="tracking-wide text-amber-500">★★★★</span>
+                  <span class="text-stone-400">★</span>
+                  <span class="ml-1 text-stone-500">(124)</span>
+                </div>
+
+                <button
+                  type="button"
+                  data-add-to-cart
+                  data-product-name="Tailored Blazer"
+                  class="mt-4 w-full bg-stone-900 px-2 py-3 text-xs font-medium text-white transition hover:bg-stone-700 sm:text-sm"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="group min-w-0">
+              <div class="relative overflow-hidden rounded-lg bg-stone-100">
+                <a
+                  href="#product-handbag"
+                  class="block aspect-[4/5] overflow-hidden"
+                >
+                  <img
+                    src="./assets/product-leather-handbag.png"
+                    alt="Ivory leather handbag"
+                    width="343"
+                    height="507"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </a>
+
+                <span
+                  data-cart-count
+                  class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-gray-950 text-[10px] text-white"
+                >
+                  0
+                </span>
+
+                <button
+                  type="button"
+                  data-wishlist-toggle
+                  aria-label="Add Leather Handbag to wishlist"
+                  aria-pressed="false"
+                  class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-xl text-stone-900 transition hover:bg-stone-900 hover:text-white"
+                >
+                  ♡
+                </button>
+              </div>
+
+              <div class="pt-4">
+                <h3
+                  class="truncate text-sm font-medium text-stone-900 sm:text-base"
+                >
+                  <a href="#product-handbag" class="hover:text-stone-500">
+                    Leather Handbag
+                  </a>
+                </h3>
+
+                <div class="mt-2 flex flex-wrap items-center gap-2">
+                  <span
+                    class="text-sm font-semibold text-stone-900 sm:text-base"
+                    >$84.99</span
+                  >
+                  <span class="text-xs text-stone-400 line-through sm:text-sm"
+                    >$99.99</span
+                  >
+                </div>
+
+                <div class="mt-2 flex items-center gap-1 text-xs">
+                  <span class="tracking-wide text-amber-500">★★★★</span>
+                  <span class="text-stone-400">★</span>
+                  <span class="ml-1 text-stone-500">(89)</span>
+                </div>
+
+                <button
+                  type="button"
+                  data-add-to-cart
+                  data-product-name="Leather Handbag"
+                  class="mt-4 w-full bg-stone-900 px-2 py-3 text-xs font-medium text-white transition hover:bg-stone-700 sm:text-sm"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="group min-w-0">
+              <div class="relative overflow-hidden rounded-lg bg-stone-100">
+                <a
+                  href="#product-sneakers"
+                  class="block aspect-[4/5] overflow-hidden"
+                >
+                  <img
+                    src="./assets/product-classic-sneakers.png"
+                    alt="Ivory classic sneakers"
+                    width="344"
+                    height="507"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </a>
+
+                <span
+                  data-cart-count
+                  class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-gray-950 text-[10px] text-white"
+                >
+                  0
+                </span>
+                <button
+                  type="button"
+                  data-wishlist-toggle
+                  aria-label="Add Classic Sneakers to wishlist"
+                  aria-pressed="false"
+                  class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-xl text-stone-900 transition hover:bg-stone-900 hover:text-white"
+                >
+                  ♡
+                </button>
+              </div>
+
+              <div class="pt-4">
+                <h3
+                  class="truncate text-sm font-medium text-stone-900 sm:text-base"
+                >
+                  <a href="#product-sneakers" class="hover:text-stone-500">
+                    Classic Sneakers
+                  </a>
+                </h3>
+
+                <div class="mt-2 flex flex-wrap items-center gap-2">
+                  <span
+                    class="text-sm font-semibold text-stone-900 sm:text-base"
+                    >$59.99</span
+                  >
+                  <span class="text-xs text-stone-400 line-through sm:text-sm"
+                    >$79.99</span
+                  >
+                </div>
+
+                <div class="mt-2 flex items-center gap-1 text-xs">
+                  <span class="tracking-wide text-amber-500">★★★★</span>
+                  <span class="text-stone-400">★</span>
+                  <span class="ml-1 text-stone-500">(156)</span>
+                </div>
+
+                <button
+                  type="button"
+                  data-add-to-cart
+                  data-product-name="Classic Sneakers"
+                  class="mt-4 w-full bg-stone-900 px-2 py-3 text-xs font-medium text-white transition hover:bg-stone-700 sm:text-sm"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </article>
+
+            <!-- Product 4 -->
+            <article class="group min-w-0">
+              <div class="relative overflow-hidden rounded-lg bg-stone-100">
+                <a
+                  href="#product-blouse"
+                  class="block aspect-[4/5] overflow-hidden"
+                >
+                  <img
+                    src="./assets/product-satin-blouse.png"
+                    alt="Ivory satin blouse"
+                    width="349"
+                    height="507"
+                    loading="lazy"
+                    class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </a>
+
+                <span
+                  data-cart-count
+                  class="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-gray-950 text-[10px] text-white"
+                >
+                  0
+                </span>
+
+                <button
+                  type="button"
+                  data-wishlist-toggle
+                  aria-label="Add Satin Blouse to wishlist"
+                  aria-pressed="false"
+                  class="absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full bg-white/90 text-xl text-stone-900 transition hover:bg-stone-900 hover:text-white"
+                >
+                  ♡
+                </button>
+              </div>
+
+              <div class="pt-4">
+                <h3
+                  class="truncate text-sm font-medium text-stone-900 sm:text-base"
+                >
+                  Satin Blouse
+                </h3>
+
+                <div class="mt-2 flex flex-wrap items-center gap-2">
+                  <span
+                    class="text-sm font-semibold text-stone-900 sm:text-base"
+                    >$64.99</span
+                  >
+                  <span class="text-xs text-stone-400 line-through sm:text-sm"
+                    >$79.99</span
+                  >
+                </div>
+
+                <div class="mt-2 flex items-center gap-1 text-xs">
+                  <span class="tracking-wide text-amber-500">★★★★</span>
+                  <span class="text-stone-400">★</span>
+                  <span class="ml-1 text-stone-500">(72)</span>
+                </div>
+
+                <button
+                  type="button"
+                  data-add-to-cart
+                  data-product-name="Satin Blouse"
+                  class="mt-4 w-full bg-stone-900 px-2 py-3 text-xs font-medium text-white transition hover:bg-stone-700 sm:text-sm"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </article>
+          </div>
+
+          <!-- View All -->
+          <div class="mt-12 text-center">
+            <a
+              href="#featured-products"
+              class="inline-flex border border-stone-900 px-8 py-3 text-xs font-semibold uppercase tracking-widest text-stone-900 transition hover:bg-stone-900 hover:text-white"
+            >
+              View All Products
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Shop With NOVA -->
+      <section class="border-y border-stone-200 bg-white py-14 md:py-20">
+        <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+          <!-- Section Heading -->
+          <div class="mb-10 text-center">
+            <span
+              class="text-xs font-semibold uppercase tracking-[0.3em] text-stone-500"
+            >
+              The NOVA Promise
+            </span>
+
+            <h2
+              class="mt-3 text-2xl font-medium tracking-tight text-stone-900 sm:text-3xl"
+            >
+              Shopping Made Better
+            </h2>
+          </div>
+
+          <!-- Benefits Grid -->
+          <div class="grid grid-cols-2 gap-x-5 gap-y-10 lg:grid-cols-4">
+            <!-- Benefit 1 -->
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-stone-100 text-stone-800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"
+                  />
+                  <circle cx="7.5" cy="18" r="1.5" />
+                  <circle cx="17.5" cy="18" r="1.5" />
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-semibold text-stone-900 sm:text-base">
+                Free Shipping
+              </h3>
+
+              <p
+                class="mt-2 max-w-[220px] text-xs leading-6 text-stone-500 sm:text-sm"
+              >
+                Enjoy free delivery on orders over $100.
+              </p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-stone-100 text-stone-800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="4" y="10" width="16" height="11" rx="2" />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8 10V7a4 4 0 118 0v3m-4 4v3"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-semibold text-stone-900 sm:text-base">
+                Secure Payment
+              </h3>
+
+              <p
+                class="mt-2 max-w-[220px] text-xs leading-6 text-stone-500 sm:text-sm"
+              >
+                Shop confidently with secure checkout.
+              </p>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-stone-100 text-stone-800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4 7v5h5M20 17v-5h-5"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5.5 12a7 7 0 0112-4.5L20 12M4 12l2.5 4.5A7 7 0 0018.5 12"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-semibold text-stone-900 sm:text-base">
+                Easy Returns
+              </h3>
+
+              <p
+                class="mt-2 max-w-[220px] text-xs leading-6 text-stone-500 sm:text-sm"
+              >
+                Hassle-free returns within 30 days.
+              </p>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="flex flex-col items-center text-center">
+              <div
+                class="mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-stone-100 text-stone-800"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8 10h8M8 14h5"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 11.5a8.5 8.5 0 01-12.8 7.3L3 20l1.2-4.2A8.5 8.5 0 1121 11.5z"
+                  />
+                </svg>
+              </div>
+
+              <h3 class="text-sm font-semibold text-stone-900 sm:text-base">
+                24/7 Support
+              </h3>
+
+              <p
+                class="mt-2 max-w-[220px] text-xs leading-6 text-stone-500 sm:text-sm"
+              >
+                We're always here to help you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section id="newsletter" class="bg-[#eae5de] py-16 md:py-24">
+        <div class="mx-auto max-w-3xl px-5 text-center">
+          <span
+            class="text-xs font-semibold uppercase tracking-[0.3em] text-stone-500"
+          >
+            Stay Connected
+          </span>
+
+          <h2
+            class="mt-4 text-3xl font-medium tracking-tight text-stone-900 sm:text-4xl md:text-5xl"
+          >
+            Join the NOVA Community
+          </h2>
+
+          <p
+            class="mx-auto mt-4 max-w-xl text-sm leading-7 text-stone-600 md:text-base"
+          >
+            Subscribe to receive exclusive offers, new arrivals and style
+            inspiration.
+          </p>
+
+          <form
+            id="newsletter-form"
+            class="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row"
+          >
+            <label for="newsletter-email" class="sr-only">
+              Your email address
+            </label>
+
+            <input
+              id="newsletter-email"
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+              autocomplete="email"
+              class="min-w-0 flex-1 border border-stone-300 bg-white px-5 py-4 text-sm text-stone-900 outline-none placeholder:text-stone-400 focus:border-stone-900"
+            />
+
+            <button
+              type="submit"
+              class="bg-stone-900 px-8 py-4 text-xs font-semibold uppercase tracking-widest text-white transition hover:bg-stone-700"
+            >
+              Subscribe
+            </button>
+          </form>
+
+          <p
+            id="newsletter-message"
+            class="mt-4 min-h-5 text-sm text-stone-700"
+            aria-live="polite"
+          ></p>
+
+          <p class="mt-3 text-xs text-stone-500">
+            By subscribing, you agree to receive updates from NOVA.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <!-- NOVA Footer -->
+    <footer class="bg-stone-950 text-stone-300">
+      <div class="mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-10">
+        <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Brand -->
+          <div>
+            <a
+              href="#"
+              class="text-3xl font-semibold tracking-[0.2em] text-white"
+            >
+              NOVA
+            </a>
+
+            <p class="mt-5 max-w-xs text-sm leading-7 text-stone-400">
+              Discover timeless fashion and everyday essentials. Designed to
+              make every moment feel special.
+            </p>
+
+            <div class="mt-6 flex gap-4">
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="transition hover:text-white"
+                >Instagram</a
+              >
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="transition hover:text-white"
+                >Facebook</a
+              >
+              <a
+                href="#"
+                aria-label="Pinterest"
+                class="transition hover:text-white"
+                >Pinterest</a
+              >
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3
+              class="mb-5 text-sm font-semibold uppercase tracking-widest text-white"
+            >
+              Quick Links
+            </h3>
+
+            <ul class="space-y-3 text-sm text-stone-400">
+              <li><a href="#" class="transition hover:text-white">Home</a></li>
+              <li>
+                <a href="#categories" class="transition hover:text-white"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a href="#featured-products" class="transition hover:text-white"
+                  >Collections</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-white">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-white">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Customer Care -->
+          <div>
+            <h3
+              class="mb-5 text-sm font-semibold uppercase tracking-widest text-white"
+            >
+              Customer Care
+            </h3>
+
+            <ul class="space-y-3 text-sm text-stone-400">
+              <li><a href="#" class="transition hover:text-white">FAQs</a></li>
+              <li>
+                <a href="#" class="transition hover:text-white"
+                  >Shipping Information</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-white"
+                  >Returns & Exchanges</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-white"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="transition hover:text-white"
+                  >Terms & Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div>
+            <h3
+              class="mb-5 text-sm font-semibold uppercase tracking-widest text-white"
+            >
+              Get in Touch
+            </h3>
+
+            <ul class="space-y-4 text-sm text-stone-400">
+              <li>
+                <span class="mb-1 block text-xs text-stone-500">Email</span>
+                <a
+                  href="mailto:hello@novastore.com"
+                  class="transition hover:text-white"
+                >
+                  hello@novastore.com
+                </a>
+              </li>
+
+              <li>
+                <span class="mb-1 block text-xs text-stone-500">Phone</span>
+                <a href="tel:+10000000000" class="transition hover:text-white">
+                  +1 000 000 0000
+                </a>
+              </li>
+
+              <li>
+                <span class="mb-1 block text-xs text-stone-500"
+                  >Working Hours</span
+                >
+                Monday - Friday, 9 AM - 6 PM
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div
+          class="mt-14 flex flex-col items-center justify-between gap-4 border-t border-stone-800 pt-7 text-center sm:flex-row sm:text-left"
+        >
+          <p class="text-xs text-stone-500">
+            © 2026 NOVA Store. All rights reserved.
+          </p>
+
+          <p class="text-xs text-stone-500">Designed with care by NOVA.</p>
+        </div>
+      </div>
+    </footer>
+
+   <script type="module" src="./main.js"></script>
+
+    <!-- <script src="../node_modules/flowbite/dist/flowbite.min.js"></script> -->
+  </body>
+</html>
